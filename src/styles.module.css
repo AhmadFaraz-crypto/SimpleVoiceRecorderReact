@@ -1,0 +1,19 @@
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    margin-top: 20%;
+    text-align: center;
+}
+
+.counter {
+    font-size: 30px;
+}
+
+.audioPlay {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.recordingBtn {
+    display: block;
+}
