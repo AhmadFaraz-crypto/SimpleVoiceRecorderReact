@@ -1,5 +1,5 @@
 {
-  "name": "SimpleVoiceRecorderReact",
+  "name": "simplevoicerecorderreact",
   "version": "2.1.1",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
@@ -45,5 +45,11 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "description": "# Installation",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-ahmed:AhmadFaraz-crypto/SimpleVoiceRecorderReact.git"
+  },
+  "license": "ISC"
 }
