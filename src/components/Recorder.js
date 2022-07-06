@@ -19,7 +19,7 @@ const Recorder = ({
   useEffect(() => {
     if (start) {
       if (minutes <= 60) {
-        if (seconds >= 0 && seconds <= 29) {
+        if (seconds >= 0) {
           setTimeout(() => {
             if (seconds + 1 === 60) {
               setSeconds(0);
