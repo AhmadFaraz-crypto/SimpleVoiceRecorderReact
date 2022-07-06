@@ -104,7 +104,7 @@ var Recorder = function Recorder(_ref) {
 
   React.useEffect(function () {
     if (start) {
-      if (seconds <= 60) {
+      if (minutes <= 60) {
         if (seconds >= 0 && seconds <= 29) {
           setTimeout(function () {
             if (seconds + 1 === 60) {
@@ -119,7 +119,7 @@ var Recorder = function Recorder(_ref) {
           setMinutes(0);
           stopRecording();
         }
-      } else if (seconds >= 60) {
+      } else if (minutes >= 60) {
         handleRecording();
         console.log("You can record only 60 minutes audio.");
       }
