@@ -1,0 +1,229 @@
+.example {
+  h2 {
+    color: #ffffff;
+    margin-bottom: 16px;
+    font-size: 32px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #ffffff 0%, rgba(255, 255, 255, 0.8) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .description {
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 36px;
+    line-height: 1.7;
+    font-size: 17px;
+  }
+
+  .recorder-container {
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .status-display {
+    padding: 18px 24px;
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    border-radius: 12px;
+    margin-bottom: 24px;
+    font-size: 16px;
+    backdrop-filter: blur(10px);
+
+    .status-idle {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .status-recording {
+      color: #ef4444;
+      font-weight: 700;
+    }
+
+    .status-paused {
+      color: #f59e0b;
+      font-weight: 700;
+    }
+
+    .status-completed {
+      color: #10b981;
+      font-weight: 700;
+    }
+
+    .status-error {
+      color: #ef4444;
+      font-weight: 700;
+    }
+  }
+
+  .recordings-list {
+    margin-top: 36px;
+    padding: 28px;
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+
+    h3 {
+      margin-bottom: 20px;
+      color: #ffffff;
+      font-weight: 700;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 18px;
+        padding: 16px;
+        background: rgba(10, 14, 39, 0.6);
+        border: 1px solid rgba(99, 102, 241, 0.2);
+        border-radius: 12px;
+        transition: all 0.3s ease;
+
+        &:hover {
+          border-color: rgba(99, 102, 241, 0.5);
+          transform: translateY(-2px);
+        }
+
+        audio {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .code-block {
+    margin-top: 48px;
+    padding: 24px;
+    background: rgba(10, 14, 39, 0.9);
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    border-radius: 16px;
+    overflow-x: auto;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+
+    h3 {
+      color: #ffffff;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    pre {
+      margin: 0;
+      color: #f8f8f2;
+      font-size: 14px;
+      line-height: 1.8;
+
+      code {
+        font-family: 'Fira Code', 'Courier New', monospace;
+      }
+    }
+  }
+
+  .error-message {
+    padding: 15px;
+    background: #fee2e2;
+    color: #dc2626;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+
+  .custom-recorder {
+    padding: 30px;
+    background: #f9fafb;
+    border-radius: 12px;
+    margin: 20px 0;
+
+    .recorder-controls {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .control-btn {
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s;
+
+      &.start {
+        background: #2563eb;
+        color: white;
+
+        &:hover:not(:disabled) {
+          background: #1d4ed8;
+        }
+      }
+
+      &.stop {
+        background: #dc2626;
+        color: white;
+
+        &:hover {
+          background: #b91c1c;
+        }
+      }
+
+      &.pause {
+        background: #f59e0b;
+        color: white;
+
+        &:hover {
+          background: #d97706;
+        }
+      }
+
+      &.download {
+        background: #10b981;
+        color: white;
+
+        &:hover {
+          background: #059669;
+        }
+      }
+
+      &.clear {
+        background: #6b7280;
+        color: white;
+
+        &:hover {
+          background: #4b5563;
+        }
+      }
+
+      &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+    }
+
+    .recorder-status {
+      text-align: center;
+      padding: 15px;
+      background: white;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      font-size: 14px;
+
+      div {
+        margin-bottom: 5px;
+      }
+    }
+
+    .audio-preview {
+      margin-top: 20px;
+
+      audio {
+        width: 100%;
+      }
+    }
+  }
+}
+

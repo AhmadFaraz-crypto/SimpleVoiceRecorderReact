@@ -1,0 +1,43 @@
+.docs-page {
+  padding: 120px 40px;
+  background: #0a0e27;
+  min-height: calc(100vh - 200px);
+  max-width: 1400px;
+  margin: 0 auto;
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+
+  .page-title {
+    font-size: 48px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #ffffff 0%, rgba(255, 255, 255, 0.7) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: -1px;
+  }
+
+  .page-description {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 768px) {
+  .docs-page {
+    padding: 80px 20px;
+
+    .page-title {
+      font-size: 36px;
+    }
+  }
+}
+

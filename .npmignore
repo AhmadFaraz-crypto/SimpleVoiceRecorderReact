@@ -1,3 +1,10 @@
+node_modules
 src
-.babelrc
-webpack.config.js
+*.test.*
+*.spec.*
+tsconfig.json
+.npmrc
+demo
+dist/**/*.map
+*.log
+.DS_Store

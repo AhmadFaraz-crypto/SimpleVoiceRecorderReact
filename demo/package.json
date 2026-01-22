@@ -1,0 +1,41 @@
+{
+  "name": "simplevoicerecorderreact-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo project for Simple Voice Recorder React",
+  "dependencies": {
+    "ajv": "^8.12.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.30.3",
+    "react-scripts": "5.0.1",
+    "simplevoicerecorderreact": "file:.."
+  },
+  "resolutions": {
+    "simplevoicerecorderreact/react": "$react",
+    "simplevoicerecorderreact/react-dom": "$react-dom"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
