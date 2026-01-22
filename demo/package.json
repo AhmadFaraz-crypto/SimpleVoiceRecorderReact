@@ -9,7 +9,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.30.3",
     "react-scripts": "5.0.1",
-    "simplevoicerecorderreact": "file:.."
+    "simplevoicerecorderreact": "^3.0.0"
   },
   "resolutions": {
     "simplevoicerecorderreact/react": "$react",
