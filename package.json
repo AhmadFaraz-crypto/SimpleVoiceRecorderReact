@@ -1,16 +1,39 @@
 {
   "name": "simplevoicerecorderreact",
-  "version": "2.1.3",
+  "version": "3.0.0",
   "main": "dist/index.js",
-  "module": "dist/index.modern.js",
-  "source": "src/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "sideEffects": [
+    "*.css"
+  ],
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./dist/index.css": "./dist/index.css",
+    "./package.json": "./package.json"
+  },
   "author": "Ahmad Faraz",
+  "keywords": [
+    "react",
+    "voice",
+    "recorder",
+    "audio",
+    "recording",
+    "microphone",
+    "media-recorder",
+    "typescript"
+  ],
   "engines": {
-    "node": ">=10"
+    "node": ">=14"
   },
   "scripts": {
-    "build": "microbundle-crl --no-compress --format modern,cjs",
-    "start": "microbundle-crl watch --no-compress --format modern,cjs",
+    "build": "microbundle-crl --no-compress --format modern,cjs --external react,react-dom",
+    "start": "microbundle-crl watch --no-compress --format modern,cjs --external react,react-dom",
     "prepare": "run-s build",
     "test": "run-s test:unit test:lint test:build",
     "test:build": "run-s build",
@@ -20,9 +43,20 @@
     "predeploy": "cd example && npm install && npm run build"
   },
   "peerDependencies": {
-    "react": "^16.0.0"
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
+    "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": false
+    },
+    "react-dom": {
+      "optional": false
+    }
   },
   "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
     "microbundle-crl": "^0.13.10",
     "babel-eslint": "^10.0.3",
     "cross-env": "^7.0.2",
@@ -39,14 +73,17 @@
     "gh-pages": "^2.2.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.0.4",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "^3.4.1"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
+    "sass": "^1.57.0",
+    "typescript": "^4.9.0"
   },
   "files": [
-    "dist"
+    "dist",
+    "src"
   ],
-  "description": "# Installation",
+  "description": "A modern, feature-rich React voice recorder component with TypeScript support, pause/resume, download, and more",
   "repository": {
     "type": "git",
     "url": "git@github.com-ahmed:AhmadFaraz-crypto/SimpleVoiceRecorderReact.git"
